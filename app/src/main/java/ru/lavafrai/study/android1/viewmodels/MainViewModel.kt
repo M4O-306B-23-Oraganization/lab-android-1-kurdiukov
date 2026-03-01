@@ -11,11 +11,15 @@ class MainViewModel(
         amplitude: Float,
         phase: Float,
         frequency: Float,
+        samples: Int,
+        samplingPeriodUs: Float,
     ) {
         navController.navigate(PreviewDestination(
             amplitude = amplitude,
             frequency = frequency,
             phase = phase,
+            samples = samples,
+            samplingPeriodUs = samplingPeriodUs,
         ))
     }
 }
